@@ -1,9 +1,10 @@
 # 📘 Plover Korean Dictionary
 
-한국어 속기(스테노) 입력을 Plover
-에서 지원하기 위한 사전(dictionary) 모음집입니다.
-plover_korean
- 플러그인과 함께 사용하면 Glove80 같은 스테노 키보드에서 초성+중성+종성 조합 규칙을 기반으로 한글을 빠르고 정확하게 입력할 수 있습니다.
+한국어 속기(스테노) 입력을 위해 기능을 제공하는 [Plover](https://github.com/openstenoproject/plover) 앱의 플러그인인 [plover_korean](https://github.com/nsmarkop/plover_korean?utm_source=chatgpt.com)의 기본적인 키 동작이 맵핑 돼 있는 사전(dictionary) 모음집입니다.
+
+사전을 사용하면 Glove80 같은 키보드에서 초성+중성+종성 조합 규칙을 기반으로 한글을 빠르고 정확하게 입력할 수 있습니다.
+
+[plover_korean](https://github.com/nsmarkop/plover_korean?utm_source=chatgpt.com)에 사전이 올라와 있지만 정확히 인식되지 않는 버그가 있어 `json` 파일(**Plover**에서 제대로 인식하는 버전)으로 올렸습니다.
 
 ## ✨ 주요 기능
 
@@ -11,11 +12,11 @@ plover_korean
 
 ✅ 사전 구성
 
-hangul_steno.json: 기본 자모/단어 매핑
+- hangul_steno.json: 기본 자모/단어 매핑
 
-combos.json: 복합어·복합음절 단축 조합
+- combos.json: 복합어·복합음절 단축 조합
 
-orthography.json: 맞춤법·결합 규칙 정의
+- orthography.json: 맞춤법·결합 규칙 정의
 
 ✅ 호환성: Plover 4.0+ / plover_korean 플러그인
 
@@ -44,11 +45,11 @@ git clone https://github.com/Jin-coding-333/plover-korean-dictionary.git
 
 dictionaries/*.json 파일을 Plover 설정 경로에 복사
 
-macOS: ~/Library/Application Support/plover/dictionaries/
+macOS: `~/Library/Application Support/plover/dictionaries/`
 
-Windows: %APPDATA%\plover\dictionaries\
+Windows: `%APPDATA%\plover\dictionaries\`
 
-Linux: ~/.local/share/plover/dictionaries/
+Linux: `~/.local/share/plover/dictionaries/`
 
 Plover → Configure → Dictionaries → +Add 에서 JSON 파일 추가
 
